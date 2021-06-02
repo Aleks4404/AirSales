@@ -14,14 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 
 class AviaSalesManagerTest {
-    private AviaSalesRepository repository = new AviaSalesRepository();
-    private AviaSalesManager manager = new AviaSalesManager(repository);
-    private AviaSales first = new AviaSales(1, 3_390, 60, "KUF", "DME");
-    private AviaSales second = new AviaSales(2, 4_080, 60, "KUF", "LED");
-    private AviaSales thirst = new AviaSales(3, 4_000, 60, "KUF", "RTW");
-    private AviaSales fourth = new AviaSales(4, 13_340, 60, "KUF", "KHV");
-    private AviaSales fifth = new AviaSales(5, 2_585, 60, "KUF", "SVO");
-    private AviaSales sixth = new AviaSales(6, 2_900, 60, "KUF", "LED");
+    AviaSalesRepository repository = new AviaSalesRepository();
+    AviaSalesManager manager = new AviaSalesManager(repository);
+    AviaSales first = new AviaSales(1, 3_390, 60, "KUF", "DME");
+    AviaSales second = new AviaSales(2, 4_080, 60, "KUF", "LED");
+    AviaSales thirst = new AviaSales(3, 4_000, 60, "KUF", "RTW");
+    AviaSales fourth = new AviaSales(4, 13_340, 60, "KUF", "KHV");
+    AviaSales fifth = new AviaSales(5, 2_585, 60, "KUF", "SVO");
+    AviaSales sixth = new AviaSales(6, 2_900, 60, "KUF", "LED");
 
     @BeforeEach
     public void setup() {

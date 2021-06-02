@@ -15,20 +15,6 @@ public class AviaSalesRepository {
         items = tmp;
     }
 
-    public AviaSales[] getAll() {
-        return items;
-    }
-
-    public AviaSales findByID(int id) {
-        for (AviaSales item : items) {
-            if (item.getId() == id) ;
-            {
-                return item;
-            }
-        }
-        return null;
-    }
-
     public AviaSales[] removeById(int id){
         int length = items.length -1;
         AviaSales[] tmp = new AviaSales[length];

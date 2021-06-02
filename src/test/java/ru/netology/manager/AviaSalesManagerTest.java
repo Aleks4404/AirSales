@@ -33,6 +33,16 @@ class AviaSalesManagerTest {
 
     }
 
+    // TODO Добавил тест на сортировку стоимости билета по возрастанию
+    @Test //Тест сортировка по стоимости билета по возрастанию
+    public void shouldSortByIdPrice() {
+        AviaSales[] expected = new AviaSales[]{first, second, thirst};
+        AviaSales[] actual = new AviaSales[]{first, thirst, second};
+        Arrays.sort(expected);
+        assertArrayEquals(expected, actual);
+        System.out.println(Arrays.toString(expected));
+    }
+
     @Test // Тест использование метода переопределения
     public void shouldEseOverridedMethod() {
         AviaSales aviaSales = new AviaSales();
@@ -54,7 +64,6 @@ class AviaSalesManagerTest {
         AviaSales[] expected = new AviaSales[]{first};
         assertArrayEquals(expected, actual);
         System.out.println(Arrays.toString(expected));
-
     }
 
     @Test // Тест неверный аэропорт вылета
@@ -64,6 +73,7 @@ class AviaSalesManagerTest {
         assertArrayEquals(expected, actual);
         System.out.println(Arrays.toString(actual));
     }
+
     @Test // Тест неверный аэропорт прилета
     public void shouldWrongTo() {
         AviaSales[] actual = manager.findAll("KUF", "");

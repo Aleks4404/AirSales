@@ -12,7 +12,7 @@ public class AviaSalesManager {
         this.repository = repository;
     }
 
-    public AviaSales[] findAll(String from, String to) {
+    public AviaSales[] findAll(String from, String to){
         AviaSales[] result = new AviaSales[0];
         for (AviaSales ticket : repository.findAll()) {
             if (ticket.getFrom().equalsIgnoreCase(from) && ticket.getTo().equalsIgnoreCase(to)) {

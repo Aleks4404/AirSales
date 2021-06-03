@@ -3,7 +3,6 @@ package ru.netology.repository;
 import ru.netology.domain.AviaSales;
 
 public class AviaSalesRepository {
-
     private AviaSales[] items = new AviaSales[0];
 
     public void save(AviaSales item) {
@@ -15,14 +14,14 @@ public class AviaSalesRepository {
         items = tmp;
     }
 
-    public AviaSales[] removeById(int id){
-        int length = items.length -1;
+    public AviaSales[] removeById(int id) {
+        int length = items.length - 1;
         AviaSales[] tmp = new AviaSales[length];
         int index = 0;
-        for (AviaSales item : items){
-            if (item.getId()!= id){
+        for (AviaSales item : items) {
+            if (item.getId() != id) {
                 tmp[index] = item;
-                index ++;
+                index++;
             }
         }
         items = tmp;

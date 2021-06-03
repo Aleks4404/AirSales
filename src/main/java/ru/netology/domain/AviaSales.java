@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class AviaSales implements Comparable<AviaSales> {
+public class AviaSales implements Comparable<AviaSales>{
     private int id;
     private int price; // Стоимость билета
     private int time; // Время полета

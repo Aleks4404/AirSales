@@ -32,7 +32,6 @@ class AviaSalesManagerTest {
         repository.save(fifth);
 
     }
-
     // TODO Добавил тест на сортировку стоимости билета по возрастанию
     @Test //Тест сортировка по стоимости билета по возрастанию
     public void shouldSortByIdPrice() {

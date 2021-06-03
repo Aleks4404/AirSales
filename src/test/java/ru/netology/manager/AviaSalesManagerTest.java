@@ -9,7 +9,8 @@ import ru.netology.repository.AviaSalesRepository;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 
@@ -32,6 +33,7 @@ class AviaSalesManagerTest {
         repository.save(fifth);
 
     }
+
     // TODO Добавил тест на сортировку стоимости билета по возрастанию
     @Test //Тест сортировка по стоимости билета по возрастанию
     public void shouldSortByIdPrice() {
